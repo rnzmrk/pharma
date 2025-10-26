@@ -1,16 +1,3 @@
-<div>
-    <div class="mb-3">
-        {{ $title }}
-    </div>
-
-    <div class="mb-5">
-        {{ count($users) }}
-    </div>
-
-    <button wire:click="createUser">
-        create
-    </button>
-</div>
 
 <div>
     <form wire:submit="createUser" action="post">
