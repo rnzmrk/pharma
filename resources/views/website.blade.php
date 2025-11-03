@@ -6,8 +6,8 @@
 
         <!----css and js file---->
         @vite(['resources/css/app.css', 'resources/js/app.js'])
-
-        <!--------page title------>
+{{--  --}}
+        <!--------page title------>S
         <title>Document</title>
 
     </head>
