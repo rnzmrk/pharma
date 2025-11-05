@@ -6,7 +6,7 @@
 
         <!----css and js file---->
         @vite(['resources/css/app.css', 'resources/js/app.js'])
-{{--  --}}
+
         <!--------page title------>
         <title>website</title>
 
@@ -39,6 +39,9 @@
                                 <a class="nav-link text-light" href="#">ABOUT</a>
                             </li>
                             <li class="nav-item">
+                                <a class="nav-link text-light" href="#">CONTACT US</a>
+                            </li>
+                            <li class="nav-item">
                                 <a class="nav-link text-light" href="#">LOGIN</a>
                             </li>
                         </ul>
@@ -56,7 +59,7 @@
 
                 <!-- Background Image -->
                 <img src="{{ asset('image/blackbg.jpg') }}" alt="Background"
-                class="w-100 h-100 object-fit-cover position-absolute top-0 start-0">
+                class="w-100 h-100 height: 200px; object-fit-cover position-absolute top-0 start-0">
 
                 <!-- Text -->
                 <div class="d-flex justify-content-center align-items-center vh-100 position-relative text-white">
@@ -71,33 +74,38 @@
         <section>
 
             <!--carousel-->
-            <div class="contianer-fluid bg-black">
+            <div class="contianer-fluid bg-black mb-3">
                 <div class="row justify-content-center">
 
-                    <div class="col-md-6">
+                    <!--header text----->
+                    <div class="col-md-12 d-flex justify-content-center alighn-items-center py-2">
+                        <h1 class="text-white mb-2">FEATURES PRODUCTS</h1>
+                    </div>
+
+                    <div class="col-md-6 py-2">
 
                         <!--auto playing carousel-->
                         <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
                             <div class="carousel-inner">
 
                                 <div class="carousel-item active">
-                                <img src="{{ asset('image/pic1.jpg') }}" class="d-block w-100 h-50" style="object-fit: contain;" alt="med1">
+                                <img src="{{ asset('image/pic1.jpg') }}" class="d-block w-100" style="height: 200px; object-fit: contain;" alt="med1">
                                 </div>
 
                                 <div class="carousel-item">
-                                <img src="{{ asset('image/pic2.jpg') }}" class="d-block w-100 h-50" style="object-fit: contain;" alt="med2">
+                                <img src="{{ asset('image/pic2.jpg') }}" class="d-block w-100" style="height: 200px; object-fit: contain;" alt="med2">
                                 </div>
 
                                 <div class="carousel-item">
-                                <img src="{{ asset('image/pic3.jpg') }}" class="d-block w-100 h-50" style="object-fit: contain;" alt="med3">
+                                <img src="{{ asset('image/pic3.jpg') }}" class="d-block w-100" style="height: 200px; object-fit: contain;" alt="med3">
                                 </div>
 
                                 <div class="carousel-item">
-                                <img src="{{ asset('image/pic4.jpg') }}" class="d-block w-100 h-50" style="object-fit: contain;" alt="med4">
+                                <img src="{{ asset('image/pic4.jpg') }}" class="d-block w-100" style="height: 200px; object-fit: contain;" alt="med4">
                                 </div>
 
                                 <div class="carousel-item">
-                                <img src="{{ asset('image/pic5.webp') }}" class="d-block w-100 h-50" style="object-fit: contain;" alt="med5">
+                                <img src="{{ asset('image/pic5.webp') }}" class="d-block w-100" style="height: 200px; object-fit: contain;" alt="med5">
                                 </div>
 
                             </div>
@@ -112,8 +120,172 @@
 
         <!--ABOUT US--->
         <section>
+            <div class="container bg-tertiary rounded shadow-lg py-2 mb-3">
+                <div class="row">
+                    <!--header text-->
+                    <div class="col-md-12 d-flex justify-content-center py-2">
+                        <h1>ABOUT US</h1>
+                    </div>
 
+                    <div class="row align-items-center">
+
+                        <!--left content--->
+                        <div class="col-md-6 col-12 px-5">
+
+                            <p class="">
+                            <strong>Your Pharmacy Name</strong> is more than just a place to pick up prescriptions were your neighborhood health partner.
+                            Founded with a mission to provide accessible, compassionate care, our team of licensed pharmacists and healthcare
+                            professionals are committed to helping you live your healthiest life.
+                            </p>
+
+                            <p><strong>We believe in:</strong></p>
+                            <ul>
+                                <li><strong>Trust: </strong>Every interaction is guided by integrity and confidentiality.</li>
+                                <li><strong>Care: </strong>We treat every customer like family, offering personalized support.</li>
+                                <li><strong>Innovation: </strong>From online services to modern health tools, we embrace technology to serve you better.</li>
+                            </ul>
+
+                            <p>
+                                Whether you're managing a chronic condition, seeking wellness products,
+                                or simply need advice, we're here for you every step of the way.
+                            </p>
+
+                        </div>
+
+                        <!--right content--->
+                        <div class="col-sm-6 d-flex justify-content-center align-items-center">
+                                <img src="{{ asset('image/peg1.gif') }}" class="img-fluid rounded" style="object-fit: contain" alt="">
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
         </section>
+
+        <!--services-->
+        <section>
+            <div class="container-fluid vh-100 bg-black py-3 mb-3">
+                <div class="bg-white rounded">
+                    <div class="row">
+
+                        <div class="col-md-12 d-flex justify-content-center alighn-items-center py-2">
+                            <h1>SERVICES</h1>
+                        </div>
+
+                        <div class="row justify-content-center align-items-center g-2 px-3 py-3">
+
+                            <!--services--->
+                            <div class="col-sm-4">
+                                <div class="card bg-dark h-100">
+                                    <img src="" alt="">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">Some quick example text to build on the card title andp
+                                            make up the bulk of the card's content.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-4">
+                                <div class="card bg-dark h-100">
+                                    <img src="" alt="">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">Some quick example text to build on the card title andp
+                                            make up the bulk of the card's content.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-4">
+                                <div class="card bg-dark h-100">
+                                    <img src="" alt="">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">Some quick example text to build on the card title andp
+                                            make up the bulk of the card's content.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--contact-->
+        <section>
+            <div class="container vh-100 bg-white shadow-lg rounded py-4 mb-3">
+                <div class="row">
+
+                    <div class="col-md-12 d-flex justify-content-center alighn-items-center">
+                        <h1>CONTACT US</h1>
+                    </div>
+
+                    <div class="col-md-6">
+
+                    </div>
+
+                    <div class="col-md-6">
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="container-fluid bg-dark">
+                <div class="row text-white text-center text-md-start py-4">
+
+                    <div class="col-md-3 mb-3">
+                        <h5>Contact Info</h5>
+                        <p>
+                            nfsdlkfslkdnf
+                        </p>
+
+                        <p>jpg?asfdas</p>
+                    </div>
+
+                    <div class="col-md-3 mb-3">
+                        <h5>Contact Info</h5>
+                        <p>Address: 123 Main St, City, Country</p>
+                        <p>Phone: (123) 456-7890</p>
+                        <p>Email:
+                    </div>
+
+                    <div class="col-md-3 mb-3">
+                        <h5>Follow Us</h5>
+                        <p>
+                            <a href="#" class="text-white me-2">Facebook</a>
+                            <a href="#" class="text-white me-2">Twitter</a>
+                            <a href="#" class="text-white">Instagram</a>
+                        </p>
+
+                    </div>
+
+                    <div class="col-md-3 mb-3">
+                        <h5>Follow Us</h5>
+                        <p>
+                            <a href="#" class="text-white me-2">Facebook</a>
+                            <a href="#" class="text-white me-2">Twitter</a>
+                            <a href="#" class="text-white">Instagram</a>
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </footer>
+
+        <!--rights reserved-->
+        <div class="container-fluid bg-black text-center text-white py-3">
+            <p class="mb-0">&copy; 2024 Your Pharmacy Name. All rights reserved.</p>
+        </div>
 
     </body>
 </html>
