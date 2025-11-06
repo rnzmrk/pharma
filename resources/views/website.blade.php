@@ -3,12 +3,12 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
         <!----css and js file---->
         @vite(['resources/css/app.css', 'resources/js/app.js'])
-
+        <!-----logo------>
+        <link rel="icon" href="{{ asset('image/logo.png') }}">
         <!--------page title------>
-        <title>website</title>
+        <title>VELARIS APOTHECARY</title>
 
     </head>
     <body>
@@ -19,7 +19,10 @@
                 <div class="container-fluid">
 
                     <!-- Website Logo / Name -->
-                    <a class="navbar-brand text-light" href="#">NAVBAR</a>
+                    <a class="navbar-brand text-light" href="#">
+                        <img src="{{ asset('image/logo.png') }}" alt=""
+                        class="img-fluid" style="height: 30px; object-fit: cover;">
+                          VELARIS APOTHECARY</a>
 
                     <!-- Burger Button -->
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
@@ -61,9 +64,12 @@
                 <img src="{{ asset('image/blackbg.jpg') }}" alt="Background"
                 class="w-100 h-100 height: 200px; object-fit-cover position-absolute top-0 start-0">
 
-                <!-- Text -->
+                <!-- MAIN TEXT -->
                 <div class="d-flex justify-content-center align-items-center vh-100 position-relative text-white">
-                    <h1 class="display-4 fw-bold">dsnaklsndkl</h1>
+                    <div class="text-center">
+                        <h1 class="display-4 fw-bold" id="maintext" >VELARIS APOTHECARY</h1>
+                        <p>"At Velaris Apothecary, we believe health is more than science it's an art."</p>
+                    </div>
                 </div>
 
             </div>
@@ -133,7 +139,7 @@
                         <div class="col-md-6 col-12 px-5">
 
                             <p class="">
-                            <strong>Your Pharmacy Name</strong> is more than just a place to pick up prescriptions were your neighborhood health partner.
+                            <strong>VELARIS APOTHECARY</strong> is more than just a place to pick up prescriptions were your neighborhood health partner.
                             Founded with a mission to provide accessible, compassionate care, our team of licensed pharmacists and healthcare
                             professionals are committed to helping you live your healthiest life.
                             </p>
@@ -165,46 +171,58 @@
 
         <!--services-->
         <section>
-            <div class="container-fluid vh-100 bg-black py-3 mb-3">
+            <div class="container-fluid vh-100 bg-black py-3 mb-2">
                 <div class="bg-white rounded">
                     <div class="row">
 
-                        <div class="col-md-12 d-flex justify-content-center alighn-items-center py-2">
+                        <div class="col-md-12 d-flex justify-content-center alighn-items-center pt-2">
                             <h1>SERVICES</h1>
                         </div>
 
-                        <div class="row justify-content-center align-items-center g-2 px-3 py-3">
+                        <div class="row justify-content-center align-items-center g-3 px-3 py-1 mb-3">
 
                             <!--services--->
-                            <div class="col-sm-4">
-                                <div class="card bg-dark h-100">
-                                    <img src="" alt="">
+                            <div class="col-sm-3">
+                                <div class="card h-100 shadow-lg">
+                                    <img src="{{ asset('image/ser2.jpg') }}" alt=""
+                                     class="image-fluid rounded" style="height: 400px; object-fit: cover;">
                                     <div class="card-body">
-                                        <h5 class="card-title">Card title</h5>
-                                        <p class="card-text">Some quick example text to build on the card title andp
-                                            make up the bulk of the card's content.</p>
+                                        <h5 class="card-title">Fast & Discreet Home Delivery</h5>
+                                        <p class="card-text">
+                                            Enjoy convenient, secure delivery right to your doorstep.
+                                            Our packaging ensures your privacy while maintaining
+                                            the premium quality and safety of every order.
+                                        </p>
                                     </div>
                                 </div>
                             </div>
 
-                            <div class="col-sm-4">
-                                <div class="card bg-dark h-100">
-                                    <img src="" alt="">
+                            <div class="col-sm-3">
+                                <div class="card h-100 shadow-lg">
+                                    <img src="{{ asset('image/ser1.jpg') }}" alt=""
+                                    class="image-fluid rounded" style="height: 400px; object-fit: cover;">
                                     <div class="card-body">
-                                        <h5 class="card-title">Card title</h5>
-                                        <p class="card-text">Some quick example text to build on the card title andp
-                                            make up the bulk of the card's content.</p>
+                                        <h5 class="card-title">Online Ordering</h5>
+                                        <p class="card-text">
+                                            Skip the lines and manage your prescriptions effortlessly.
+                                            Order and refill your medications online, and well prepare
+                                            them with care and precision ready for delivery or pickup.
+                                        </p>
                                     </div>
                                 </div>
                             </div>
 
-                            <div class="col-sm-4">
-                                <div class="card bg-dark h-100">
-                                    <img src="" alt="">
+                            <div class="col-sm-3">
+                                <div class="card h-100 shadow-lg">
+                                    <img src="{{ asset('image/ser3.jpg') }}" alt=""
+                                     class="image-fluid rounded" style="height: 400px; object-fit: cover;">
                                     <div class="card-body">
-                                        <h5 class="card-title">Card title</h5>
-                                        <p class="card-text">Some quick example text to build on the card title andp
-                                            make up the bulk of the card's content.</p>
+                                        <h5 class="card-title">Click & Collect Service</h5>
+                                        <p class="card-text">
+                                            Order online and pick up in-store at your convenience.
+                                            Well prepare your items in advance, so your visit is fast,
+                                            easy, and hassle-free.
+                                        </p>
                                     </div>
                                 </div>
                             </div>
@@ -233,48 +251,84 @@
 
                     </div>
 
+                    <div class="col-md-12 d-flex justify-content-center align-items-center">
+                        <div>
+                            <div class="text-center">
+                                <h4>GET IN TOUCH</h4>
+                            </div>
+                            <a href="" class="text-decoration-none text-white">
+                            <i class="bi bi-facebook"></i></a>
+                            <a href="#"></a>
+                            <a href="#"></a>
+                            <a href="#"></a>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </section>
 
+        <!-- website footer -->
         <footer>
-            <div class="container-fluid bg-dark">
+            <div class="container-fluid bg-dark px-5 opacity-100">
                 <div class="row text-white text-center text-md-start py-4">
 
                     <div class="col-md-3 mb-3">
-                        <h5>Contact Info</h5>
-                        <p>
-                            nfsdlkfslkdnf
-                        </p>
-
-                        <p>jpg?asfdas</p>
-                    </div>
-
-                    <div class="col-md-3 mb-3">
-                        <h5>Contact Info</h5>
-                        <p>Address: 123 Main St, City, Country</p>
-                        <p>Phone: (123) 456-7890</p>
-                        <p>Email:
-                    </div>
-
-                    <div class="col-md-3 mb-3">
-                        <h5>Follow Us</h5>
-                        <p>
-                            <a href="#" class="text-white me-2">Facebook</a>
-                            <a href="#" class="text-white me-2">Twitter</a>
-                            <a href="#" class="text-white">Instagram</a>
-                        </p>
+                        <h5 class="mb-2">VELARIS APOTHECARY</h5>
+                        <div>
+                            <a href="" class="text-decoration-none text-white">
+                                <img src="{{ asset('image/logo.png') }}" alt=""
+                                class="img-fluid" style="height: 150px; width: 150px; object-fit: contain;">
+                            </a>
+                            <p class="mt-2">"At Velaris Apothecary, we believe health is more than science it's an art."</p>
+                        </div>
 
                     </div>
 
-                    <div class="col-md-3 mb-3">
-                        <h5>Follow Us</h5>
+                    <div class="col-sm-3 mb-3">
+                        <h5>About Us</h5>
                         <p>
-                            <a href="#" class="text-white me-2">Facebook</a>
-                            <a href="#" class="text-white me-2">Twitter</a>
-                            <a href="#" class="text-white">Instagram</a>
+                            <strong>Velaris Apothecary</strong> is more than just a place to pick up prescriptions were your trusted partner in health and wellness.
+                            Blending modern science with refined care, we provide premium health solutions designed to nurture balance,
+                            beauty, and well-being. At Velaris, every product and service reflects our belief that caring for yourself should feel extraordinary.
                         </p>
+                    </div>
 
+                    <div class="col-sm-3 mb-3">
+                        <h5 class="mb-2">Follow Us</h5>
+                        <div>
+                           <a href="" class="text-decoration-none text-white">
+                           <i class="bi bi-facebook"></i>  facebook</a>
+                        </div>
+                        <div>
+                            <a href="" class="text-decoration-none text-white">
+                           <i class="bi bi-instagram"></i>  instagram</a>
+                        </div>
+                        <div>
+                           <a href="" class="text-decoration-none text-white">
+                           <i class="bi bi-telegram"></i>  telegram</a>
+                        </div>
+                        <div>
+                           <a href="" class="text-decoration-none text-white">
+                            <i class="bi bi-twitter-x"></i>  twitter-x</a>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-3 mb-3">
+                        <h5 class="mb-2">Contact Info</h5>
+                        <div>
+                            <i class="bi bi-telephone-fill"> +09-0000-00</i>
+                        </div>
+                        <div>
+                            <i class="bi bi-phone-fill"> +09544894580</i>
+                        </div>
+                        <div>
+                            <a href="" class="text-decoration-none text-white">
+                            <i class="bi bi-envelope"></i>  sdflk@gmail.com</a>
+                        </div>
+                        <div>
+                            <i class="bi bi-geo-alt-fill"> #147 area 5b tandangsora avenue blk 345 lot 945 culiat quezon city, 1119</i>
+                        </div>
                     </div>
 
                 </div>
@@ -284,7 +338,7 @@
 
         <!--rights reserved-->
         <div class="container-fluid bg-black text-center text-white py-3">
-            <p class="mb-0">&copy; 2024 Your Pharmacy Name. All rights reserved.</p>
+            <p class="mb-0">&copy; 2024 VELARIS APOTHECARY. All rights reserved.</p>
         </div>
 
     </body>
