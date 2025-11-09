@@ -33,19 +33,19 @@
                         <div class="collapse navbar-collapse" id="navbarText">
                             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                                 <li class="nav-item">
-                                    <a class="nav-link text-light" aria-current="page" href="#">HOME</a>
+                                    <a class="nav-link text-light" aria-current="page" href="#home">HOME</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link text-light" href="#">FEATURES</a>
+                                    <a class="nav-link text-light" href="#feature">FEATURES</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link text-light" href="#">ABOUT</a>
+                                    <a class="nav-link text-light" href="#about">ABOUT</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link text-light" href="#">SERVICES</a>
+                                    <a class="nav-link text-light" href="#service">SERVICES</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link text-light" href="#">CONTACT</a>
+                                    <a class="nav-link text-light" href="#contact">CONTACT</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link text-light" href="#">LOGIN</a>
@@ -58,7 +58,7 @@
             </header>
 
             <!-- Website Content -->
-            <main>
+            <main id="home">
 
                 <!-- Website Background Section -->
                 <div class="container-fluid position-relative vh-100 p-0">
@@ -80,7 +80,7 @@
             </main>
 
             <!--website courosel /FEATURES--->
-            <section>
+            <section id="feature">
 
                 <!--carousel-->
                 <div class="contianer-fluid bg-black mb-3">
@@ -183,7 +183,7 @@
             </section>
 
             <!--ABOUT US--->
-            <section>
+            <section id="about">
                 <div class="container bg-tertiary rounded shadow-lg py-2 mb-3">
                     <div class="row">
                         <!--header text-->
@@ -228,7 +228,7 @@
             </section>
 
             <!--services-->
-            <section>
+            <section id="service">
                 <div class="container-fluid bg-black py-3 mb-5">
                     <div class="bg-white rounded mb-5">
                         <div class="row">
@@ -305,7 +305,7 @@
             </section>
 
             <!--contact-->
-            <section>
+            <section id="contact">
                 <div class="container bg-white shadow-lg rounded py-4 mb-3">
                     <div class="row">
 
@@ -403,7 +403,7 @@
                         <div class="col-md-3 mb-3">
                             <h5 class="mb-2">VELARIS APOTHECARY</h5>
                             <div>
-                                <a href="" class="text-decoration-none text-white">
+                                <a href="#home" class="text-decoration-none text-white">
                                     <img src="{{ asset('image/logo.png') }}" alt=""
                                     class="img-fluid" style="height: 150px; width: 150px; object-fit: contain;">
                                 </a>
