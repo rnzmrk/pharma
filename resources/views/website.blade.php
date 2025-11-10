@@ -336,7 +336,7 @@
 
                                         <div class="mb-3">
                                             <label for="name" class="form-label">Message</label>
-                                            <textarea type="text" class="form-control" placeholder="type here"></textarea>
+                                            <textarea type="text" class="form-control" placeholder="type h ere"></textarea>
                                         </div>
 
                                         <div class="mb-3 d-flex justify-content-center align-items-center">
