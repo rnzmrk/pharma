@@ -9,7 +9,8 @@
         <!--header-->
         <div class="container rounded text-center mb-3 bg-white p-3">
             <h5>WELCOME TO VELARIS APOTHECARY</h5>
-            <p class="mb-3">Discover a sanctuary of wellness where tradition meets modern care.
+            <p class="mb-3">
+                            Discover a sanctuary of wellness where tradition meets modern care.
                             From herbal remedies to trusted essentials,
                             here to support your health journey naturally.
             </p>

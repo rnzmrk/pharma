@@ -16,4 +16,4 @@ Route::view('/customer/order', 'customer.customer-order');
 Route::view('/customer/history', 'customer.customer-history');
 Route::view('/customer/cart', 'customer.customer-cart');
 Route::view('/customer/profile', 'customer.customer-profile');
-
+Route::view('/customer/checkout', 'customer.customer-checkout');
