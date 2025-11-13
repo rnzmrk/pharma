@@ -9,12 +9,27 @@
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 
     <!--------page title------>
-    <title>Document</title>
+    <title>@yield('title', '')</title>
 
 </head>
 <body>
 
+    <div class="container-fluid p-3" style="background-color: #EDEDED;">
+        <div class="row">
+
+            <aside class="col-md-3 col-lg-2">
+                @include('partials.pharma-aside')
+            </aside>
+
+            <main class="col-md-9 col-lg-9">
+                <div class="p-3 border rounded bg-white vh-100">
+                    @yield('pharma-main')
+                </div>
+            </main>
+        </div>
+    </div>
 
 
 </body>
 </html>
+

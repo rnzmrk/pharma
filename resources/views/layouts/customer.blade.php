@@ -23,7 +23,6 @@
         @yield('customer-main')
     </main>
 
-
     <!-- website footer -->
     <footer>
         @include('partials.customer-footer')
