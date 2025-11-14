@@ -4,7 +4,6 @@
 @section('customer-main')
     <div class="bg-white container mb-4 px-1 py-2">
 
-
         <h1 @class(['text-center', 'mb-3'])>ORDER</h1>
 
         <div @class(['row', 'g-4'])>

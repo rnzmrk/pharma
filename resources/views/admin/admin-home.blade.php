@@ -3,8 +3,9 @@
 @section('title', 'Home')
 @section('admin-main')
 
-    <div>
-        asdassdaasd
+    <div class="container vh-100">
+        <h3>Dashboard</h3>
+        <hr>
     </div>
 
 @endsection

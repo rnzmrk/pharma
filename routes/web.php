@@ -8,6 +8,10 @@ Route::get('/', function () {
 
 Route::view('/customer', 'layouts.customer');
 
+/* AUTH */
+
+Route::view('auth/login', 'auth.login');
+Route::view('auth/register', 'auth.register');
 
 /* CUSTOMER VIEW  */
 
