@@ -7,7 +7,7 @@
     <!-----logo------>
     <link rel="icon" href="{{ asset('image/logo.png') }}">
     <!----css and js file---->
-    @vite(['resources/css/app.css', 'resources/js/app.js'])>
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
     <!--------page title------>
     <title>@yield('title', '')</title>
 

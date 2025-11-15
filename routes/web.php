@@ -4,14 +4,14 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('website');
-});
+})->name('web');
 
 Route::view('/customer', 'layouts.customer');
 
 /* AUTH */
 
-Route::view('auth/login', 'auth.login');
-Route::view('auth/register', 'auth.register');
+Route::view('auth/login', 'auth.login')->name('login');
+Route::view('auth/register', 'auth.register')->name('register');
 
 /* CUSTOMER VIEW  */
 

@@ -48,7 +48,7 @@
                                     <a class="nav-link text-light" href="#contact">CONTACT</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link text-light" href="#">LOGIN</a>
+                                    <a class="nav-link text-light" href="{{ route('login') }}">LOGIN</a>
                                 </li>
                             </ul>
                         </div>

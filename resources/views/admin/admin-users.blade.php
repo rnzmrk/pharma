@@ -20,13 +20,14 @@
             <table class="table">
                 <thead>
                     <tr>
-                    <th scope="col">#</th>
-                    <th scope="col">First</th>
-                    <th scope="col">Last</th>
-                    <th scope="col">Handle</th>
-                    <th scope="col">Handle</th>
-                    <th scope="col">Handle</th>
-                    <th scope="col">Handle</th>
+                    <th scope="col">UserID</th>
+                    <th scope="col">FullName</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">Phone</th>
+                    <th scope="col">Address</th>
+                    <th scope="col">Password</th>
+                    <th scope="col">Role</th>
+                    <th scope="col">Action</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -38,6 +39,7 @@
                     <td>Mark</td>
                     <td>Otto</td>
                     <td>@mdo</td>
+                    <td>@mdo</td>
                     </tr>
                     <tr>
                     <th scope="row">2</th>
@@ -47,6 +49,7 @@
                     <td>Mark</td>
                     <td>Otto</td>
                     <td>@mdo</td>
+                    <td>@mdo</td>
                     </tr>
                     <tr>
                     <th scope="row">3</th>
@@ -55,6 +58,7 @@
                     <td>@social</td>
                     <td>Mark</td>
                     <td>Otto</td>
+                    <td>@mdo</td>
                     <td>@mdo</td>
                     </tr>
                 </tbody>

@@ -21,7 +21,7 @@
                     <p>price: </p>
                     <p>mode: </p>
                     <p>status: </p>
-                    <p>payemnt status:</p>
+                    <p>payemnt status:</p>asdad
                 </div>
                 </div>
             </div>

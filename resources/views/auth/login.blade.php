@@ -12,29 +12,34 @@
     <title>Login</title>
 </head>
 <body>
-    <div class="container-fluid p-3">
 
-        <div>
-            <a href=""><i class="bi bi-arrow-left-circle display-5"></i></a>
-            <h1 class="text-center mb-5">Login</h1>
+    <div class="container-fluid"
+    style="background-image: url('{{ asset('image/log1.gif') }}');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;">
+        <div class="p-3">
+            <a href="{{ route('web') }}"><i class="bi bi-arrow-left-circle display-5 text-white"></i></a>
+            <h1 class="text-center mb-5 text-white">Login</h1>
         </div>
 
         <div class="row d-flex justify-content-center align-items-center">
             <div class="col-md-6 mb-3">
                 <div class="d-flex justify-content-center">
-                    <div class="border border-black rounded p-5 shadow-lg shadow-black">
+                    <div class="border border-white rounded p-5 shadow-lg shadow-white bg-white">
                         <form>
                         <h5 class="text-center mb-5">Login your account</h5>
                         <div class="mb-3">
-                            <label for="exampleInputEmail1" class="form-label">Email address</label>
-                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                            <label for="" class="form-label">Email address</label>
+                            <input type="email" class="form-control" >
                         </div>
                         <div class="mb-3">
-                            <label for="exampleInputPassword1" class="form-label">Password</label>
-                            <input type="password" class="form-control" id="exampleInputPassword1">
+                            <label for="" class="form-label">Password</label>
+                            <input type="password" class="form-control">
                         </div>
                         <div>
-                            <p>already have an account? <a href="" class="text-decoration-none">click here!</a></p>
+                            <p>dont't have an account? <a href="{{ route('register') }}" class="text-decoration-none">click here!</a></p>
                         </div>
                         <button type="submit" class="btn btn-primary w-100">Submit</button>
                         </form>
