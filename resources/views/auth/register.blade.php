@@ -28,32 +28,55 @@
             <div class="col-md-6 mb-3">
                 <div class="d-flex justify-content-center">
                     <div class="border border-white rounded p-5 shadow-lg shadow-white bg-white">
-                        <form>
+                        <form method="POST" action="{{ route('register.store') }}">
+                        @csrf
                         <h5 class="text-center mb-5">Register account</h5>
                         <div class="mb-3">
                             <label for="" class="form-label">Full Name</label>
-                            <input type="email" class="form-control">
+                            <input type="text" name="fullname" class="form-control" value="{{ old('fullname') }}" required>
+                            @error('fullname')
+                                <small class="text-danger">{{ $message }}</small>
+                            @enderror
                         </div>
                         <div class="mb-3">
                             <label for="" class="form-label">Email address</label>
-                            <input type="email" class="form-control">
+                            <input type="email" name="email" class="form-control" value="{{ old('email') }}" required>
+                            @error('email')
+                                <small class="text-danger">{{ $message }}</small>
+                            @enderror
                         </div>
                         <div class="mb-3">
                             <label for="" class="form-label">Phone</label>
-                            <input type="email" class="form-control">
+                            <input type="text" name="phone" class="form-control" value="{{ old('phone') }}">
+                            @error('phone')
+                                <small class="text-danger">{{ $message }}</small>
+                            @enderror
                         </div>
                         <div class="mb-3">
                             <label for="" class="form-label">Address</label>
-                            <input type="email" class="form-control">
+                            <input type="text" name="address" class="form-control" value="{{ old('address') }}">
+                            @error('address')
+                                <small class="text-danger">{{ $message }}</small>
+                            @enderror
                         </div>
                         <div class="mb-3">
                             <label for="exampleInputPassword1" class="form-label">Password</label>
-                            <input type="password" class="form-control">
+                            <input type="password" name="password" class="form-control" required>
+                            @error('password')
+                                <small class="text-danger">{{ $message }}</small>
+                            @enderror
+                        </div>
+                        <div class="mb-3">
+                            <label for="password_confirmation" class="form-label">Confirm Password</label>
+                            <input type="password" name="password_confirmation" class="form-control" required>
                         </div>
                         <div>
                             <p>already have an account? <a href="{{ route('login') }}" class="text-decoration-none">click here!</a></p>
                         </div>
                         <button type="submit" class="btn btn-primary w-100">Submit</button>
+                        @if (session('status'))
+                            <div class="alert alert-success mt-3">{{ session('status') }}</div>
+                        @endif
                         </form>
                     </div>
                 </div>

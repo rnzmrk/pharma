@@ -5,7 +5,7 @@
 @section('pharma-main')
 
     <div>
-        @livewire('pharma.profile')
+        @livewire('pharma.profile.index')
     </div>
 
 @endsection

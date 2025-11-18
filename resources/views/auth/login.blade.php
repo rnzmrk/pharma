@@ -28,20 +28,36 @@
             <div class="col-md-6 mb-3">
                 <div class="d-flex justify-content-center">
                     <div class="border border-white rounded p-5 shadow-lg shadow-white bg-white">
-                        <form>
+                        <form method="POST" action="{{ route('login.store') }}">
+                        @csrf
                         <h5 class="text-center mb-5">Login your account</h5>
                         <div class="mb-3">
                             <label for="" class="form-label">Email address</label>
-                            <input type="email" class="form-control" >
+                            <input type="email" name="email" class="form-control" value="{{ old('email') }}" required autofocus>
+                            @error('email')
+                                <small class="text-danger">{{ $message }}</small>
+                            @enderror
                         </div>
                         <div class="mb-3">
                             <label for="" class="form-label">Password</label>
-                            <input type="password" class="form-control">
+                            <input type="password" name="password" class="form-control" required>
+                            @error('password')
+                                <small class="text-danger">{{ $message }}</small>
+                            @enderror
+                        </div>
+                        <div class="form-check mb-3">
+                            <input class="form-check-input" type="checkbox" value="1" id="remember" name="remember">
+                            <label class="form-check-label" for="remember">
+                              Remember me
+                            </label>
                         </div>
                         <div>
                             <p>dont't have an account? <a href="{{ route('register') }}" class="text-decoration-none">click here!</a></p>
                         </div>
                         <button type="submit" class="btn btn-primary w-100">Submit</button>
+                        @if (session('status'))
+                            <div class="alert alert-success mt-3">{{ session('status') }}</div>
+                        @endif
                         </form>
                     </div>
                 </div>

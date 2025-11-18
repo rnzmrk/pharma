@@ -6,7 +6,7 @@
 
     <div class="container">
         <!---pharma content -->
-        @livewire('pharma.inventory')
+        @livewire('pharma.inventory.index')
     </div>
 
 @endsection

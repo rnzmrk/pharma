@@ -6,7 +6,7 @@
 
     <div class="container">
         <!---inventory content--->
-        @livewire('admin.inventory')
+        @livewire('admin.inventory.inventory')
     </div>
 
 @endsection

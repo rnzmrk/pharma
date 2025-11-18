@@ -9,6 +9,8 @@
     <!----css and js file---->
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 
+    @livewireStyles
+
     <!--------page title------>
     <title>@yield('title', '')</title>
 
@@ -32,5 +34,6 @@
 
 
 </body>
+    @livewireScripts
 </html>
 

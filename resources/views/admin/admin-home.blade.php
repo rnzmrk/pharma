@@ -6,7 +6,7 @@
     <div class="container vh-100">
         <h3>Dashboard</h3>
         <hr>
-        @livewire('admin.product')
+        @livewire('admin.product.index')
     </div>
 
 @endsection

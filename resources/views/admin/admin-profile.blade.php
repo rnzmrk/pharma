@@ -4,7 +4,7 @@
 @section('admin-main')
 
     <div>
-        @livewire('admin.profile')
+        @livewire('admin.profile.index')
     </div>
 
 @endsection

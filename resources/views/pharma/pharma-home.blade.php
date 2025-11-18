@@ -8,7 +8,7 @@
         <h3>Dashboard</h3>
         <hr>
 
-        @livewire('pharma.product')
+        @livewire('pharma.product.index')
     </div>
 
 @endsection
